@@ -3660,6 +3660,13 @@ input, select, textarea {
 	margin-left: 0em;
 }
 
+@media only screen and (max-width: 480px) {
+	#contact-us .row {
+	    margin-top: 0;
+	    margin-left: -1.8em;
+	}
+}
+
 .social-handles {
 	float:right;
 	margin-right: 35%;
