@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
-
-/*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -99,7 +94,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		/*font-family: "Roboto", Helvetica, sans-serif;*/
+		font-family: 'Nunito', sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
@@ -110,13 +106,14 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #e44c65;
+		/*border-bottom: dotted 1px;*/
+		color: #ffffff;
 		text-decoration: none;
+		style: bold;
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			color: #ffffff !important;
 			border-bottom-color: transparent;
 		}
 
@@ -203,7 +200,8 @@ input, select, textarea {
 	code {
 		background: rgba(255, 255, 255, 0.075);
 		border-radius: 4px;
-		font-family: "Courier New", monospace;
+		/*font-family: "Courier New", monospace;*/
+		font-family: 'Nunito', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -211,7 +209,8 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		/*font-family: "Courier New", monospace;*/
+		font-family: 'Nunito', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -2186,7 +2185,8 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: #e44c65;
+			/*background: #e44c65;*/
+			background: #ffffff;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2255,7 +2255,8 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e44c65;
+			/*border-color: #e44c65;*/
+			border-color: #ffffff;
 		}
 
 	select {
@@ -2358,7 +2359,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #e44c65;
+			/*border-color: #e44c65;*/
+			border-color: #ffffff;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2475,7 +2477,7 @@ input, select, textarea {
 			cursor: default;
 			display: inline-block;
 			height: 6em;
-			line-height: 5.65em;
+			line-height: 6.5em;
 			margin: 0 0 2em 0;
 			text-align: center;
 			width: 6em;
@@ -2517,17 +2519,17 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-		.image:before {
+	/*	.image:before {
 			content: '';
 			display: block;
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url("images/overlay.png");
+			/*background-image: url("images/overlay.png");
 			width: 100%;
 			height: 100%;
 			z-index: 1;
-		}
+		}*/
 
 		.image img {
 			border-radius: 4px;
@@ -2855,8 +2857,10 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			/*box-shadow: inset 0 0 0 1px #e44c65;*/
+			box-shadow: inset 0 0 0 1px #ffffff;
+			color: #ffffff !important;
+			/*color: #e44c65 !important;*/
 		}
 
 		input[type="submit"]:active,
@@ -2898,16 +2902,19 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #e44c65;
+			/*background-color: #e44c65;*/
+			background-color: #ffffff;
 			box-shadow: none;
-			color: #ffffff !important;
+			/*color: #ffffff !important;*/
+			color: #000000 !important;
 		}
 
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #e76278;
+				/*background-color: #e76278;*/
+				background-color: #ffffff;
 			}
 
 			input[type="submit"].primary:active,
@@ -3057,7 +3064,7 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("images/overlay.png");
+			/*background-image: url("images/overlay.png");*/
 			content: '';
 			display: block;
 			height: 100%;
@@ -3083,7 +3090,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
+			background: rgba(23, 24, 32, 0.8);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3107,17 +3114,17 @@ input, select, textarea {
 
 		.spotlight.top .content, .spotlight.bottom .content {
 			left: 0;
-			padding: 5.1em 0 3.1em 0;
+			padding: 2em 0 2em 0;
 			width: 100%;
 		}
 
 		.spotlight.top .content {
-			border-bottom-width: 0.35em;
+			/*border-top-width: 0.35em;*/
 			top: 0;
 		}
 
 		.spotlight.bottom .content {
-			border-top-width: 0.35em;
+			/*border-top-width: 0.35em;*/
 			bottom: 0;
 		}
 
@@ -3125,21 +3132,22 @@ input, select, textarea {
 			height: 101%;
 			padding: 6em 3em;
 			top: 0;
-			width: 28em;
+			width: 20em;
 		}
 
 		.spotlight.left .content {
-			border-right-width: 0.35em;
+			/*border-top-width: 0.35em;*/
 			left: 0;
 		}
 
 		.spotlight.right .content {
-			border-left-width: 0.35em;
+			/*border-top-width: 0.35em;*/
 			right: 0;
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			/*border-color: #e44c65;*/
+			border-color: #ffffff;
 		}
 
 		.spotlight.style2 .content {
@@ -3201,7 +3209,8 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			/*background: #e44c65;*/
+			background: #00000055;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3235,8 +3244,10 @@ input, select, textarea {
 			.wrapper.style2 input[type="reset"].primary,
 			.wrapper.style2 input[type="button"].primary,
 			.wrapper.style2 .button.primary {
-				background-color: #ffffff;
-				color: #e44c65 !important;
+				background-color: #ffffff5d;
+				/*background-color: #ffffff;*/
+				/*color: #e44c65 !important;*/
+				color: #ffffff !important;
 			}
 
 				.wrapper.style2 input[type="submit"].primary:hover, .wrapper.style2 input[type="submit"].primary:active,
@@ -3340,7 +3351,8 @@ input, select, textarea {
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #e44c65;
+				/*color: #e44c65;*/
+				color: #ffffff;
 			}
 
 		.dropotron.level-0 {
@@ -3430,7 +3442,8 @@ input, select, textarea {
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #e44c65;
+						/*color: #e44c65;*/
+						color: #ffffff;
 					}
 
 					#header nav ul li > ul {
@@ -3452,7 +3465,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/logo/banner.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3471,10 +3484,10 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3523,11 +3536,199 @@ input, select, textarea {
 					border-radius: 100%;
 					display: block;
 					width: 100%;
+					background-color: rgba(0, 0, 0, 0.4);;
 				}
 
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
+
+/* Introduction */
+
+
+#myVideo
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.spotlight .image.main video {
+				position: relative;
+			}
+
+.image video {
+	border-radius: 4px;
+	display: block;
+}
+
+.image.left video, .image.right video {
+				width: 100%;
+}
+.image.fit video {
+				width: 100%;
+}
+
+/* Introduction */
+#intro.spotlight:before {
+    /* background-image: url(images/overlay.png); */
+    content: '';
+    display: none;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#intro.spotlight .image.main {
+    display: inline;
+}
+
+/* Virtual Tour */
+#virtual-tour.spotlight:before {
+    /* background-image: url(images/overlay.png);*/
+    content: '';
+    display: none;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#virtual-tour.spotlight .image.main {
+    display: inline;
+}
+
+#virtual-tour .image::before {
+	position: static;
+	display: inline;
+}
+
+/* Five */
+#virtualtour
+{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.spotlight .image.main iframe {
+				position: relative;
+			}
+
+.image iframe {
+			border-radius: 4px;
+			display: block;
+			height: 100%;
+		}
+
+@media only screen and (max-width: 980px) {
+		  .image iframe {
+		    height: 50vh;
+		  }
+		}
+
+.image.left iframe, .image.right iframe {
+				width: 100%;
+			}
+.image.fit iframe {
+				width: 100%;
+			}
+
+
+/* About-us Page */
+
+#about-us-logo {
+	border-radius: 100%;
+	display: inline-grid;
+	height: 10em;
+	vertical-align: middle;
+	width: 10em;
+	background-color: #000
+}
+
+/* Contact */
+#contact-us .row {
+	margin-top: 0;
+	margin-left: 0em;
+}
+
+.social-handles {
+	float:right;
+	margin-right: 35%;
+}
+
+.social-handles ul.contact li {
+	margin: 1.5em 0 0 0;
+}
+
+ul.contact li: first-child{
+	margin-top: 0;
+}
+
+ul.contact li {
+	text-decoration: none;
+	margin: 2.5em 0 0 0;
+	padding: 0 0 0 3.25em;
+	position: relative;
+}
+
+.icon {
+	border-bottom: none;
+	position: relative;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+ul.contact {
+	list-style: none;
+	padding: 0;
+}
+
+ul {
+	margin: 0 0 2em 0;
+	padding-left: 1em;
+}
+
+ul.contact li:before {
+    border-radius: 100%;
+    border: solid 2px rgba(255, 255, 255, 0.125);
+    display: inline-block;
+    font-size: 0.8em;
+    height: 2.5em;
+    left: 0;
+    line-height: 2.35em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 2.5em;
+}
+
+.icon.solid:before {
+    font-weight: 900;
+}
+
+ul.contact li:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
 
 /* Footer */
 
@@ -3586,6 +3787,18 @@ input, select, textarea {
 					color: inherit;
 				}
 
+#footer ul {
+	list-style: none;
+}
+
+#footer li {
+	display: flex;
+}
+
+.footerdiv .row {
+				justify-content: center;
+}
+
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
@@ -3620,7 +3833,7 @@ input, select, textarea {
 
 			.spotlight.left .content, .spotlight.right .content {
 				padding: 4.5em 2.5em;
-				width: 25em;
+				width: 20em;
 			}
 
 		/* Wrapper */
@@ -3674,7 +3887,7 @@ input, select, textarea {
 				}
 
 				.spotlight .content {
-					background-color: #1c1d26;
+					/*background-color: #1c1d26;*/
 					border-width: 0 !important;
 					border-top-width: 0.35em !important;
 					bottom: auto !important;
@@ -3930,8 +4143,9 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
-						color: rgba(255, 255, 255, 0.5);
+						/*background: #e44c65;*/
+						background: #ffffff;
+						color: rgba(0, 0, 0);
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;

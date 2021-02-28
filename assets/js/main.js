@@ -1,7 +1,5 @@
 /*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+K-Arc Square | Main.js
 */
 
 (function($) {
@@ -134,6 +132,8 @@
 
 		}
 
+
+
 	// Spotlights.
 		var $spotlights = $('.spotlight');
 
@@ -149,6 +149,7 @@
 					var top, bottom, mode;
 
 					// Use main <img>'s src as this spotlight's background.
+
 						$this.css('background-image', 'url("' + $this.find('.image.main > img').attr('src') + '")');
 
 					// Side-specific scrollex tweaks.
@@ -157,21 +158,18 @@
 							mode = 'top';
 							top = '-20%';
 							bottom = 0;
-
 						}
 						else if ($this.hasClass('bottom')) {
 
 							mode = 'bottom-only';
 							top = 0;
 							bottom = '20%';
-
 						}
 						else {
 
 							mode = 'middle';
 							top = 0;
 							bottom = 0;
-
 						}
 
 					// Add scrollex.
@@ -185,7 +183,7 @@
 
 							// Uncomment the line below to "rewind" when this spotlight scrolls out of view.
 
-							//leave:	function(t) { $this.addClass('inactive'); },
+							leave:	function(t) { $this.addClass('inactive'); },
 
 						});
 
@@ -246,5 +244,27 @@
 
 		$banner
 			._parallax();
+
+ // Image Enlarge
+ $('img[data-enlargeable]').addClass('img-enlargeable').click(function(){
+    var src = $(this).attr('src');
+    var modal;
+    function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
+    modal = $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        removeModal();
+    }).appendTo('body');
+    //handling ESC
+    $('body').on('keyup.modal-close', function(e){
+      if(e.key==='Escape'){ removeModal(); }
+    });
+});
 
 })(jQuery);
