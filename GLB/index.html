@@ -29,12 +29,13 @@
 
 		<script type="module">
 
-			import * as THREE from './main/js/three.module.js';
-			import Stats from './main/js/stats.module.js';
+			import * as THREE from 'main/js/three.module.js';
 
-			import { OrbitControls } from './main/js/OrbitControls.js';
-			import { GLTFLoader } from './main/js/GLTFLoader.js';
-			import { DRACOLoader } from './main/js/DRACOLoader.js';
+			import Stats from 'main/js/stats.module.js';
+
+			import { OrbitControls } from 'main/js/OrbitControls.js';
+			import { GLTFLoader } from 'main/js/GLTFLoader.js';
+			import { DRACOLoader } from 'main/js/DRACOLoader.js';
 
 			let mixer;
 
@@ -69,7 +70,7 @@
 			scene.add( dirLight );
 
 			// envmap
-			const path = './main/textures/';
+			const path = 'main/textures/';
 			const format = '.jpg';
 			const envMap = new THREE.CubeTextureLoader().load( [
 				path + 'posx' + format, path + 'negx' + format,
@@ -78,11 +79,11 @@
 			] );
 
 			const dracoLoader = new DRACOLoader();
-			dracoLoader.setDecoderPath( './main/draco/' );
+			dracoLoader.setDecoderPath( 'main/draco/' );
 
 			const loader = new GLTFLoader();
 			loader.setDRACOLoader( dracoLoader );
-			loader.load( './main/gltf/test.glb', function ( gltf ) {
+			loader.load( 'main/gltf/test.glb', function ( gltf ) {
 
 				const model = gltf.scene;
 				model.position.set( 1, 1, 0 );
