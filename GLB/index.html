@@ -57,10 +57,10 @@
 			scene.background = new THREE.Color( 0xbfe3dd );
 
 			const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 100 );
-			camera.position.set( 5, 2, 8 );
+			camera.position.set( 5, 2, 30);
 
 			const controls = new OrbitControls( camera, renderer.domElement );
-			controls.target.set( 0, 0.5, 0 );
+			controls.target.set( 0, 3, 2 );
 			controls.update();
 			controls.enablePan = false;
 			controls.enableDamping = true;
@@ -68,7 +68,7 @@
 			scene.add( new THREE.HemisphereLight( 0xffffff, 0x000000, 0.4 ) );
 
 			const dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
-			dirLight.position.set( 5, 2, 8 );
+			dirLight.position.set( 0, 2, 20 );
 			scene.add( dirLight );
 
 			// envmap

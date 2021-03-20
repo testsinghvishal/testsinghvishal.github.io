@@ -63,7 +63,7 @@
 
         let loader = new GLTFLoader();
         loader.load('1.gltf', function(gltf){
-            car = gltf.scene.children[0];
+            const car = gltf.scene.children[0];
             car.scale.set(0.5,0.5,0.5);
             scene.add(gltf.scene);
             animate();
