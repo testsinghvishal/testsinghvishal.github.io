@@ -56,8 +56,8 @@
 			const scene = new THREE.Scene();
 			scene.background = new THREE.Color( 0xbfe3dd );
 
-			const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 100 );
-			camera.position.set( 5, 2, 30);
+			const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 500 );
+			camera.position.set( 0, 20, 150);
 
 			const controls = new OrbitControls( camera, renderer.domElement );
 			controls.target.set( 0, 3, 2 );
